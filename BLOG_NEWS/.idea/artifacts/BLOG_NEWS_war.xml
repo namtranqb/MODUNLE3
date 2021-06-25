@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="BLOG_NEWS:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>BLOG_NEWS</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="BLOG_NEWS-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="BLOG_NEWS:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,70 @@
+.header_text::before {
+    content: "";
+    display:none;
+    position: absolute;
+    z-index: -1;
+    top: -26vmin;
+    left: 20vmin;
+    width: 70vmin;
+    height: 70vmin;
+    border-radius: 50%;
+    border: 1.3vmin solid currentColor;
+    box-sizing: border-box;
+  }
+.header_text {
+    margin: 0 auto;
+
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .header_text em {
+      
+    color: currentColor;
+    font-size: 15vmin;
+    position: relative;
+    width: 20vmin;
+    text-align: center;
+    align-items: center;
+  }
+  
+.header_text em.planet {
+    -webkit-animation: planet-rotate 6s linear infinite;
+    animation: planet-rotate 6s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+    position: relative;
+  }
+  
+.header_text em.planet::before {
+    content: "";
+    position: absolute;
+    top: -.5vmin;
+    left: 3.5vmin;
+    z-index: -1;
+    width: 13vmin;
+    height: 13vmin;
+    border-radius: 50%;
+  }
+  
+.header_text em.planet.left {
+    -webkit-transform-origin: 40vmin 5vmin;
+    transform-origin: 40vmin 5vmin;
+  }
+  
+.header_text em.planet.right {
+    -webkit-transform-origin: -20vmin 5vmin;
+    transform-origin: -20vmin 5vmin;
+  }
+  
+  @-webkit-keyframes planet-rotate {
+    to {
+      -webkit-transform: rotate(1turn);
+    }
+  }
+  
+  @keyframes planet-rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }

@@ -1,0 +1,23 @@
+
+.cal{
+    text-align: center;
+    background-color: beige;
+    border-radius: 10px;
+    border: 2px solid;
+    width: 320px;
+    height: 400px;
+    align-items: center;
+    margin: 20px auto;
+}
+.cal div{
+    margin-top: 10px;
+}
+.cal label{
+    text-align: left;
+}
+.cal button{
+    border-radius: 10px;
+    background-color: honeydew;
+    width: 50px;
+    height: 30px;
+}
